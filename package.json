@@ -1,0 +1,34 @@
+{
+  "name": "qa-engineer-tasks",
+  "version": "1.0.0",
+  "description": "Krieger Digital QA Engineer Test task",
+  "main": "index.js",
+  "scripts": {
+    "pet-api-test": "npx playwright test petstore.test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@playwright/test": "^1.44.1",
+    "faker": "^5.5.3"
+  },
+  "devDependencies": {
+    "jest": "^27.4.3",
+    "jest-html-reporter": "^3.4.0",
+    "jest-playwright-preset": "^1.6.2",
+    "playwright": "^1.16.3"
+  },
+  "jest": {
+    "preset": "jest-playwright-preset",
+    "testMatch": ["**/src/tests/**/*.test.js"],
+    "setupFilesAfterEnv": ["<rootDir>/jest.setup.js"],
+    "reporters": [
+      "default",
+      ["jest-html-reporter", {
+        "pageTitle": "Test Report",
+        "outputPath": "reports/test-report.html",
+        "includeFailureMsg": true
+      }]
+    ]
+  }
+}
