@@ -16,6 +16,8 @@ to run Sofa.de E2E tests Run following command in terminal
 `npm run sofa-e2e`
 Please run
 
+# Video Description: https://www.loom.com/share/be98db0a1929461abdca011cfb726e86
+
 ## Task 3
 Type this below attached command to see Automation Test Report being generated against Task-2 
 once Automation Test Suite is fully executed.
