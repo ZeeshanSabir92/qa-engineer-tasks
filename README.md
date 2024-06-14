@@ -11,12 +11,18 @@ and libraries to run the project smoothly
 Please check shared document being attached below:
 `https://docs.google.com/spreadsheets/d/1OJWOWTz7iVT4DcTUdEynfvJw1nLSOdXK3QZMr9BhhGU/edit?usp=sharing`
 
+### Video Description:
+https://www.loom.com/share/72c4860a88684285a0ee6f91959de7d3
+
+
 ## Task 2
 to run Sofa.de E2E tests Run following command in terminal
 `npm run sofa-e2e`
 Please run
 
-# Video Description: https://www.loom.com/share/be98db0a1929461abdca011cfb726e86
+### Video Description: 
+https://www.loom.com/share/be98db0a1929461abdca011cfb726e86
+
 
 ## Task 3
 Type this below attached command to see Automation Test Report being generated against Task-2 
