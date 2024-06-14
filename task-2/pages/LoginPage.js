@@ -1,21 +1,18 @@
 const BasePage = require('./BasePage');
+const { sleep } = require('./ShoppingPage');
 
 class LoginPage extends BasePage {
     constructor(page) {
         super(page);
-        this.emailInput = 'input#email';
-        this.passwordInput = 'input#password';
-        this.loginButton = 'button.login';
+        this.emailInput = this.page.getByTestId('loginEmailInput');
+        this.passwordInput = this.page.getByTestId('loginPasswordInput');
+        this.loginButton = this.page.getByTestId('login-submit');
     }
 
     async login(user) {
-        console.log('USER LOGON', user);
-//      await this.page.fill(this.emailInput, user.email);
-//      await this.page.fill(this.passwordInput, user.password);
-//      await this.page.click(this.loginButton);
-        await this.page.getByTestId('loginEmailInput').fill(user.email);
-        await this.page.getByTestId('loginPasswordInput').fill(user.password);
-        await this.page.getByTestId('login-submit').click();
+        await this.emailInput.fill(user.email);
+        await this.passwordInput.fill(user.password);
+        await this.loginButton.click();
 }
 }
 

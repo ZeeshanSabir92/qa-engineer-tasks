@@ -12,6 +12,13 @@ test('User registration success', async ({ page }) => {
 
     await registrationPage.navigate('https://www.sofa.de/registrierung');
     await registrationPage.registerUser(user);
-    
-    // Add assertions to verify successful registration
-});
+
+        // assertion to verify successful registration
+        await page.getByRole('link', { name: 'John Doe' }).click();
+        await page.getByRole('link', { name: 'Deine Kundendaten' }).click();
+        await page.getByText('Details anzeigen').nth(1).click();
+        const loggedInEmail = await page.getByText(user.email);
+        console.log('loggedInEmail '+ loggedInEmail);
+        await expect(loggedInEmail).toBeVisible();
+        await page.getByRole('link', { name: 'Abmelden' }).click();
+    });

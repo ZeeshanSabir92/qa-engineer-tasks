@@ -4,13 +4,14 @@
   "description": "Krieger Digital QA Engineer Test task",
   "main": "index.js",
   "scripts": {
-    "pet-api-test": "npx playwright test petstore.test.js",
+    "pet-api-test": "cd task-5 && npx playwright test petstore.test.js",
     "sofa-e2e": "npx playwright test --headed --project=chromium --workers 1",
     "show-report": "npx playwright show-report"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.4.5",
     "faker": "^5.5.3",
     "playwright": "^1.16.3"
   },
