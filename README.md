@@ -29,6 +29,9 @@ Type this below attached command to see Automation Test Report being generated a
 once Automation Test Suite is fully executed.
 `npx playwright show-report`
 
+## Video Description
+https://www.loom.com/share/0dd961c26d1d4a6a8cd9033fc34ec1ae
+
 ## Task 5
 to run test cases of PetStore if is requried that you have NODE.JS installed on your 
 machine.
